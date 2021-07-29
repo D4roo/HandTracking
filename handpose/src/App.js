@@ -1,3 +1,4 @@
+//Type In Terminal: <cd handpose> then <npm run start> to start program --- link to program localhost:3000
 import React, {useRef} from 'react';
 //import logo from './logo.svg';
 import * as tf from "@tensorflow/tfjs";
@@ -51,7 +52,7 @@ function App() {
       <Webcam
         ref={webcamRef}
         style={{
-        position:"obsolute",
+        position:"absolute",
         marginLeft:"auto",
         marginRight:"auto",
         left:0,
@@ -65,7 +66,7 @@ function App() {
       <canvas
       ref={canvasRef}
       style={{
-        position:"obsolute",
+        position:"absolute",
         marginLeft:"auto",
         marginRight:"auto",
         left:0,
