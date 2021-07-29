@@ -27,7 +27,7 @@ export const drawHand = (predictions, ctx) =>{
                         landmarks[secondJoinIndex] [0],
                         landmarks[secondJoinIndex] [1], 
                     )
-                    ctx.strokeStyle = "plum"
+                    ctx.strokeStyle = "red"
                     ctx.lineWidth = 4
                     ctx.stroke()
                 }
@@ -42,7 +42,7 @@ export const drawHand = (predictions, ctx) =>{
                 ctx.beginPath();
                 ctx.arc(x, y, 4, 0, 3 * Math.PI);
 
-                ctx.fillStyle = "grey";
+                ctx.fillStyle = "black";
                 ctx.fill();
             }
         })
