@@ -40,9 +40,9 @@ export const drawHand = (predictions, ctx) =>{
                 const y = landmarks[i][1];
                 //First Number = Size | fillStyle = Color
                 ctx.beginPath();
-                ctx.arc(x, y, 5, 0, 3 * Math.PI);
+                ctx.arc(x, y, 4, 0, 3 * Math.PI);
 
-                ctx.fillStyle = "black";
+                ctx.fillStyle = "grey";
                 ctx.fill();
             }
         })

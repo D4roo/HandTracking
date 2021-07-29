@@ -17,7 +17,7 @@ function App() {
     // Keep Looping To Detect The Hand -- What this does here lol
     setInterval(() => {
       detect(net)
-    }, 100)
+    }, 50)//fps
   };
 
   const detect = async (net) =>{
