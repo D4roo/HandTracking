@@ -34,7 +34,7 @@ export const drawHand = (predictions, ctx) =>{
             }
 
 
-
+            
             for (let i=0; i<landmarks.length; i++){
                 const x = landmarks[i][0];
                 const y = landmarks[i][1];

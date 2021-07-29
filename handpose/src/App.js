@@ -57,7 +57,7 @@ function App() {
         marginRight:"auto",
         left:0,
         right:0,
-      textAlign:"center",
+        textAlign:"center",
         zIndex:9,
         width:640,
         height:480
