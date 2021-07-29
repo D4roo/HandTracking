@@ -6,6 +6,9 @@ import Webcam from 'react-webcam';
 import './App.css';
 
 function App() {
+  const webcamRef = useRef(null);
+  const canvasRef = useRef(null);
+
   return (
     <div className="App">
       <header className="App-header">
