@@ -4,6 +4,7 @@ const fingerJoints = {
     middleFinger: [0, 9, 10, 11, 12],
     ringFinger: [0, 13, 14, 15, 16],
     pinky: [0, 17, 18, 19, 20],
+    border: [17, 13, 9, 5],
 };
 // Drawing function thing this is so cool
 export const drawHand = (predictions, ctx) =>{
@@ -33,8 +34,10 @@ export const drawHand = (predictions, ctx) =>{
                 }
             }
 
-
             
+            
+            
+
             for (let i=0; i<landmarks.length; i++){
                 const x = landmarks[i][0];
                 const y = landmarks[i][1];
@@ -42,7 +45,19 @@ export const drawHand = (predictions, ctx) =>{
                 ctx.beginPath();
                 ctx.arc(x, y, 4, 0, 3 * Math.PI);
 
-                ctx.fillStyle = "black";
+                let color
+                document.addEventListener('keyup', function (event) {
+                    if(event.key === 'b')
+                    {
+                        color = "blue"
+                        console.log("wprks");
+                    } //else if(event.key === 'g')
+                    //{
+                        //color = "green"
+                    //}
+                });
+
+                ctx.fillStyle = color;
                 ctx.fill();
             }
         })
