@@ -34,9 +34,7 @@ export const drawHand = (predictions, ctx) =>{
                 }
             }
 
-            
-            
-            
+
 
             for (let i=0; i<landmarks.length; i++){
                 const x = landmarks[i][0];
@@ -45,19 +43,7 @@ export const drawHand = (predictions, ctx) =>{
                 ctx.beginPath();
                 ctx.arc(x, y, 4, 0, 3 * Math.PI);
 
-                let color
-                document.addEventListener('keyup', function (event) {
-                    if(event.key === 'b')
-                    {
-                        color = "blue"
-                        console.log("wprks");
-                    } //else if(event.key === 'g')
-                    //{
-                        //color = "green"
-                    //}
-                });
-
-                ctx.fillStyle = color;
+                ctx.fillStyle = "black";
                 ctx.fill();
             }
         })
